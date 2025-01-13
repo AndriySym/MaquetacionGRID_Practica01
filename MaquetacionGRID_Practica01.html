@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andriy Symonenko Oliynyk">
+    <title>Maquetación con GRID - Andriy Symonenko Oliynyk</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            grid-template-columns: 1fr;
+            width: 75%;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .titulo {
+            text-align: center;
+            font-style: italic;
+        }
+
+        .titulo h2 {
+            color: green;
+            font-size: 3.5vh;
+        }
+
+        .titulo p {
+            color: rgb(33, 91, 218);
+            font-weight: 600;
+            font-size: 1.8vh;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+        }
+
+        nav {
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-bottom: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: green;
+            font-style: italic;
+        }
+
+        .contenido {
+            display: grid;
+            gap: 20px;
+        }
+
+        .fila {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .item {
+            text-align: center;
+            border: 1px solid #000;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .item p {
+            color: green;
+            font-weight: bold;
+            margin: 0;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        footer p {
+            color: rgb(33, 91, 218);
+            font-weight: 700;
+            font-style: italic;
+            font-size: 1.7vh;
+        }
+
+        address {
+            display: flex;
+            justify-content: center;
+            font-style: italic;
+            color: green;
+            font-weight: 600;
+        }
+    </style>
+    <!-- Creado por Andriy Symonenko Oliynyk -->
+</head>
+<body>
+    <div class="contenedor">
+        <header class="titulo">
+            <h2>Maquetación con GRID</h2>
+            <p>By Andriy Symonenko Oliynyk para Diseño de Interfaces WEB</p>
+        </header>
+        <hr>
+        <main>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Galería</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <section class="contenido">
+                <section class="fila">
+                    <div class="item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHRYgk60NkQsfqQMulCYEARiXgE3MCCI0gJg&s" alt="Caballos en libertad">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                    <div class="item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWriz4lTkZ13wtBkoOgagY1LC2pvmDb6cqPQ&s" alt="Una imagen de Luminoso">
+                        <p>Una imagen de Luminoso</p>
+                    </div>
+                </section>
+
+                <section class="fila">
+                    <div class="item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM-SjRK27mfJY5516PKYdLDKv4-hkM7HbVgrwbvoO8qfLqNhW3XVnROAqsy90wdfbCKTE&usqp=CAU" alt="Una imagen de Valeroso, Quirón y Rucha">
+                        <p>Una imagen de Valeroso, Quirón y Rucha</p>
+                    </div>
+                    <div class="item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStj-9nMBsx_kESTgXEGMmIPM7wn-nqixNnjgJSORsuL87jx_zf0400cZekrE_YT4MbZ2Q&usqp=CAUg" alt="Una imagen de Favorito">
+                        <p>Una imagen de Favorito</p>
+                    </div>
+                    <div class="item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwl0BdHGToVhK1703j0agyoft3a2TNxE1UDQ&s" alt="Una imagen de Valeroso y Hera">
+                        <p>Una imagen de Valeroso y Hera</p>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <hr>
+        <footer>
+            <address>
+                Andriy Symonenko Oliynyk
+            </address>
+            <p>Todas las fotos han sido realizadas por Andriy Symonenko Oliynyk bajo la licencia CC BY-STL</p>
+        </footer>
+    </div>
+
+    <!-- Creado por Andriy Symonenko Oliynyk -->
+</body>
+</html>
